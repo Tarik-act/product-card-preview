@@ -11,7 +11,7 @@ Users should be able to:
 
 ### Screenshot
 
-![product card]('./screen-short/screen-short.png')
+![product card](./screen-short/screen-short.png)
 
 ## My process
 
