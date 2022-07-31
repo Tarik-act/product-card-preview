@@ -22,6 +22,10 @@ body {
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
   background-color: var(--primary-cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 p {
   color: var(--neutral-dark-grayish-blue);
