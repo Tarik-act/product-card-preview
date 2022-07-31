@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  --primary-dark-cyan: hsl(158, 36%, 37%);
+  --primary-hover-cyan: hsl(158, 35%, 22%);
+  --primary-cream: hsl(30, 38%, 92%);
+
+  --neutral-very-dark-blue: hsl(212, 21%, 14%);
+  --neutral-dark-grayish-blue: hsl(228, 12%, 48%);
+  --neutral-white: hsl(0, 0%, 100%);
+
+  /* font-family: 'Fraunces', serif; */
+  /* font-family: 'Montserrat', sans-serif */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--primary-cream);
+}
+p {
+  color: var(--neutral-dark-grayish-blue);
+}
+
+.card {
+  margin: 10rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 380px;
+  background-color: var(--neutral-white);
+  border-radius: 5px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card .image {
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background: no-repeat center center/cover;
+}
+
+.card .card-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.card .card-content p.tag {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.card .card-content h1 {
+  font-family: 'Fraunces', serif;
+  color: var(--neutral-very-dark-blue);
+}
+
+.card .card-content p.lead {
+  font-size: 12px;
+}
+
+.card .card-content p.price {
+  display: flex;
+  align-items: center;
+}
+.card .card-content p.price .offer {
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  color: var(--primary-dark-cyan);
+  margin-right: 1rem;
+}
+
+.card .card-content p.price .main {
+  text-decoration: line-through;
+}
+
+.card .card-content .btn {
+  display: block;
+  width: 100%;
+  background-color: var(--primary-dark-cyan);
+  border: none;
+  border-radius: 5px;
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--neutral-white);
+  transition: all 0.2s ease;
+}
+
+.card .card-content .btn:hover {
+  background-color: var(--primary-hover-cyan);
+}
+.card .card-content .btn .btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .card-content .btn img {
+  width: 15px;
+  height: 15px;
+  margin-right: 1rem;
+}
+
+/* Media Query */
+
+@media (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    width: 90vw;
+    height: 80vh;
+    margin: 4rem auto;
+  }
+  .card .image {
+    height: 40%;
+  }
+  .card .card-content {
+    height: 60%;
+    padding: 1.5rem;
+  }
+}
